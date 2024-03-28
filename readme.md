@@ -1,10 +1,10 @@
 ## Context
 
-A bug in SeedKeeper-Tool v0.1.2 and previous versions is affecting the import of a seed in a Satochip card.
+A [bug](https://github.com/Toporin/Seedkeeper-Tool/issues/12) in SeedKeeper-Tool v0.1.2 and previous versions is affecting the import of a seed in a Satochip card.
 
 Because of this bug, when importing a (BIP39) mnemonic from the SeedKeeperTool wizard to a Satochip card (in plaintext), 
 the mnemonic type is not identified correctly, and the wrong seed derivation algorithm (the one normally used for Electrum mnemonic) is used. 
-**Consequently the addresses derived from the seed are not compatible with standard BIP39 as expected.**
+**Consequently the addresses derived from the seed are not compatible with standard BIP39 as should be expected.**
 
 This small utility allows a user affected by this bug to recover a wallet derived from the BIP39 seed with the non-standard derivation, either to a new Satochip card, or through Electrum.
 
