@@ -1,0 +1,3 @@
+coincurve
+base58
+bip32
